@@ -1,0 +1,69 @@
+/* components/tabBar/tabBar.wxss */
+@import "../../app.wxss";
+
+.tab-bar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 98rpx;
+  background-color: rgb(247, 247, 250)
+}
+
+.tab-item{
+  display: inline-block;
+  width: 375rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+ 
+}
+.tab-item .item-holder{
+  display: inline-block;
+  position: relative;
+  width: 48rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  text-align: center;
+   vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tab-item .item-holder.left{
+  margin-left: -60rpx;
+}
+
+.tab-item .item-holder.right{
+  margin-right: -60rpx;
+}
+
+.tab-item .item-holder .iconfont{
+  margin-top: 17rpx;
+  width: 48rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  display: block;
+  color: #bdbdbd;
+}
+
+
+.tab-item .item-holder.selected .iconfont{
+  color: #2f80ed;
+}
+
+
+.tab-item .item-holder text{
+  height: 26rpx;
+  width: 48rpx;
+  line-height: 26rpx;
+  font-size: 18rpx;
+  display: block;
+  color: rgb(189, 189, 189);
+  margin-top: 4rpx;
+}
+
+.tab-item .item-holder.selected text{
+  color: rgb(47, 128, 237)
+}
+
